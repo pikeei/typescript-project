@@ -22,15 +22,21 @@ if (button){
 
 const hobbies = ['Dota', 'Football', 'Coding'];
 const activeHobbies = ['Sleeping'];
-
 activeHobbies.push(...hobbies);
 
+//destructuring array
+const [...hobbyList] = hobbies; 
 console.log(activeHobbies);
+console.log(hobbyList);
+console.log('test');
 
 const person ={
     name: 'John',
     age: 20,
 }
+//destructuring an object
+const {name, age} = person;
+
 //copying object using spread operator
 const copiedPerson ={...person};
 
