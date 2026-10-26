@@ -1,16 +1,14 @@
 # TypeScript Practice Project
+Following a TypeScript course at my own pace to strengthen my fundamentals.
 
-A small project for practicing TypeScript basics, including functions, types, arrays, objects, and a simple investment calculator (It just increments values, nothing too serious haha).
+## Folder structure
 
-#Run the .ts
-node calculator.ts
+- `basics/` — course examples covering functions, types, arrays, objects, unions, etc.
+- `projects/` — small projects that use those concepts
 
+## Run the calculator or other app
 
-## Practice files
-
-- `basics.ts` — functions, callbacks, and object types
-- `arrays-objects.ts` — arrays, tuples, union types, and nested objects
-- `choices.ts` — union types and roles
-- `app.ts` and `index.ts` — basic variables and functions
-- `calculator.ts` — yearly investment growth and contribution calculations
-
+```sh
+node projects/{name-of-file}.ts
+node projects/calculator.ts
+```
