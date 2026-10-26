@@ -25,8 +25,16 @@ class User {
     get fullName () {
         return `${this.firstName} ${this.lastName}`;
     }
+    
+    static usageOfStatic = 'This is a static method usage';
+    static greet (){
+        console.log("Hello world");
+    }
 }
+
+console.log(User.usageOfStatic);
+User.greet();
 const user = new User();  
 user._firstName = 'P';
-user._lastName = '';
+user._lastName = 'K';
 console.log(user.fullName);
