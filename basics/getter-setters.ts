@@ -1,5 +1,5 @@
 class User {
-    private firstName: string='';
+    protected firstName: string='';
     private lastName: string='';
 
     //sample usage of setter
@@ -46,5 +46,28 @@ class Employee extends User {
         super._firstName = 'Paul Kenneth';
     }
 
+    work(){
+        console.log(this._firstName);
+    }
+
 }
 
+abstract class UIEelement {
+
+    constructor(public identifier: string){}
+    clone(targetlocation:string){
+        //logic
+    }
+}
+
+//won't work because its abstract
+//const element = new UIEelement();
+
+//we can only inherit it
+class SideElement extends UIEelement {
+    constructor(
+        public identifier: string, 
+        public position: 'left' | 'right'){
+            super(identifier);
+        }
+}
