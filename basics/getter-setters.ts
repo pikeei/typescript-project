@@ -38,3 +38,13 @@ const user = new User();
 user._firstName = 'P';
 user._lastName = 'K';
 console.log(user.fullName);
+
+class Employee extends User {
+    
+    constructor(jobtitle: string){
+        super();
+        super._firstName = 'Paul Kenneth';
+    }
+
+}
+
