@@ -13,6 +13,10 @@ const dbSource: DBSource = {
 
 type Source = FileSource | DBSource
 
+function isFile(source: Source){
+    return source.type =='file';
+}
+
 //type guard
 function loadData(source: Source){
     //Open + read file or reach out to db serevr
@@ -21,7 +25,7 @@ function loadData(source: Source){
     }
         */
     //alternative for checking since we have 'type' now
-    if (source.type=="file"){
+    if (isFile(source)){
         source.path
         return;
     }
