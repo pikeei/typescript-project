@@ -3,6 +3,7 @@ type Datastore ={
     [prop: string]: boolean | number;   
 }
 
+let someObj: Record <string, number | boolean>;
 let store: Datastore ={
 
 }
