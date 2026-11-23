@@ -1,9 +1,11 @@
 let names: Array<string> = ["Max","Anna"];
 
-type DataStore = {
-  [key: string]: string | number      
+//Generic Type
+type DataStore<T> = {
+  [key: string]: T
 };
 
-let store: DataStore = {};
+let store: DataStore<string | boolean> = {};
 
 store.name = "Max"; 
+store.isInstructor = true;
